@@ -13,7 +13,8 @@ bracket(pic=currentpicture, Label L="", a, pos=N, sensc, p=currentpen)
 
 hatching(pic=currentpicture, mini, maxi, hHatching=2mm, myHatch)
 
-interval(pic=currentpicture, Label L1="", a1, pos1=N, sensc1, Label L2="", a2, pos2=N, sensc2, xMin=min(a1,a2)-2.5, xMax=max(a1,a2)+2.5, ticks=Ticks(), p=currentpen)
+interval(pic=currentpicture, Label L1="", a1, pos1=N, sensc1, Label L2="", a2, pos2=N,
+         sensc2, xMin=min(a1,a2)-2.5, xMax=max(a1,a2)+2.5, ticks=Ticks(), p=currentpen)
 
 solonaxis(pic=currentpicture, a,borne,position=N,dirsol,brack,solcolor=currentpen,
                 xMin=borne-3,xMax=borne+3,ticks=Ticks(),
