@@ -6,6 +6,26 @@ Set of routines for Asymptote, the vector graphics language (http://asymptote.so
 
 Just put the file inequations_cg.asy in the same directory of your file, or better, put it in your .asy directory.
 
+## Routines
+
+~~~c
+bracket(pic=currentpicture, Label L="", a, pos=N, sensc, p=currentpen)
+
+hatching(pic=currentpicture, mini, maxi, hHatching=2mm, myHatch)
+
+interval(pic=currentpicture, Label L1="", a1, pos1=N, sensc1, Label L2="", a2, pos2=N, sensc2, xMin=min(a1,a2)-2.5, xMax=max(a1,a2)+2.5, ticks=Ticks(), p=currentpen)
+
+solonaxis(pic=currentpicture, a,borne,position=N,dirsol,brack,solcolor=currentpen,
+                xMin=borne-3,xMax=borne+3,ticks=Ticks(),
+                solutions=true,hach=true)
+
+sol2onaxis(pic=currentpicture, a1,borne1,pos1=N,dirsol1,bracket11,solcolor1=currentpen,
+                  a2,borne2,pos2=N,dirsol2,bracket2,solcolor2=currentpen,
+                  xMin=min(borne1,borne2)-2.5,
+                  xMax=max(borne1,borne2)+2.5,
+                  ticks=Ticks(),hach=true)
+~~~
+
 ## Examples
 
 ![inequations](images/example.png)
